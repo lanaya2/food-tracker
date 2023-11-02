@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <form id="signup-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+
+      <button type="submit">Register</button>
+    </form>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js"></script>
+    <script>
+      // Initialize Firebase
+      const firebaseConfig = {
+        apiKey: "AIzaSyCyJew-tAuXBWcgKNf3oQbKgfZdZ1R0Hsc",
+        authDomain: "semester-project-se.firebaseapp.com",
+        projectId: "semester-project-se",
+        storageBucket: "semester-project-se.appspot.com",
+        messagingSenderId: "722924116281",
+        appId: "1:722924116281:web:668f98049bb9053ab9b0e8",
+        measurementId: "G-QS4EXL05PM",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="signup.js"></script>
+  </body>
+</html>
